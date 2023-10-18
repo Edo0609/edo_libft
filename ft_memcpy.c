@@ -6,7 +6,7 @@
 /*   By: epenaloz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 19:09:18 by epenaloz          #+#    #+#             */
-/*   Updated: 2023/09/25 19:18:34 by epenaloz         ###   ########.fr       */
+/*   Updated: 2023/10/16 18:04:02 by epenaloz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -20,7 +20,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	destiny = (unsigned char *)dst;
 	source = (unsigned char *)src;
-	if ((void *)destiny == NULL && (void *)source == NULL)
+	if (destiny == NULL && source == NULL)
 		return (NULL);
 	while (n > 0)
 	{
