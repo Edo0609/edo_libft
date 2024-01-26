@@ -6,7 +6,7 @@
 /*   By: epenaloz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 19:29:58 by epenaloz          #+#    #+#             */
-/*   Updated: 2023/10/12 19:31:38 by epenaloz         ###   ########.fr       */
+/*   Updated: 2023/12/26 23:54:18 by epenaloz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -28,7 +28,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			ft_lstclear(&new_list, del);
 			free(new_list);
 			return (NULL);
-		}	
+		}
 		ft_lstadd_back(&new_list, lst_index);
 		lst = lst -> next;
 	}
